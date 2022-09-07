@@ -1,4 +1,4 @@
-module andgate (a,b,y,clock);
+module test (a,b,y,clock);
 input a;
 input b;
 input clock;

@@ -5,20 +5,20 @@
 // The class here is then constructed to instantiate the design.
 // See the Verilator manual for examples.
 
-#ifndef VERILATED_VERILATOR_H_
-#define VERILATED_VERILATOR_H_  // guard
+#ifndef VERILATED_VTEST_H_
+#define VERILATED_VTEST_H_  // guard
 
 #include "verilated.h"
 
-class Verilator__Syms;
-class Verilator___024root;
+class Vtest__Syms;
+class Vtest___024root;
 class VerilatedVcdC;
 
 // This class is the main interface to the Verilated model
-class Verilator VL_NOT_FINAL : public VerilatedModel {
+class Vtest VL_NOT_FINAL : public VerilatedModel {
   private:
     // Symbol table holding complete model state (owned by this class)
-    Verilator__Syms* const vlSymsp;
+    Vtest__Syms* const vlSymsp;
 
   public:
 
@@ -36,19 +36,19 @@ class Verilator VL_NOT_FINAL : public VerilatedModel {
 
     // Root instance pointer to allow access to model internals,
     // including inlined /* verilator public_flat_* */ items.
-    Verilator___024root* const rootp;
+    Vtest___024root* const rootp;
 
     // CONSTRUCTORS
     /// Construct the model; called by application code
     /// If contextp is null, then the model will use the default global context
     /// If name is "", then makes a wrapper with a
     /// single model invisible with respect to DPI scope names.
-    explicit Verilator(VerilatedContext* contextp, const char* name = "TOP");
-    explicit Verilator(const char* name = "TOP");
+    explicit Vtest(VerilatedContext* contextp, const char* name = "TOP");
+    explicit Vtest(const char* name = "TOP");
     /// Destroy the model; called (often implicitly) by application code
-    virtual ~Verilator();
+    virtual ~Vtest();
   private:
-    VL_UNCOPYABLE(Verilator);  ///< Copying not allowed
+    VL_UNCOPYABLE(Vtest);  ///< Copying not allowed
 
   public:
     // API METHODS

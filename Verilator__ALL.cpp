@@ -2,6 +2,8 @@
 #define VL_INCLUDE_OPT include
 #include "Verilator.cpp"
 #include "Verilator___024root__DepSet_haec9a030__0.cpp"
+#include "Verilator__Trace__0.cpp"
 #include "Verilator___024root__Slow.cpp"
 #include "Verilator___024root__DepSet_haec9a030__0__Slow.cpp"
 #include "Verilator__Syms.cpp"
+#include "Verilator__Trace__0__Slow.cpp"
