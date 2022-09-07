@@ -1,4 +1,4 @@
-# Verilog-Projects
+# Verilog-Project-ANDGate
 
 Verilator files (systemVerilog, testbench, and executables for Verilator) (Personal learning project)
 
